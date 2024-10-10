@@ -1,8 +1,5 @@
-from src.masks import get_mask_account, get_mask_card_number
+from src.widget import mask_account_card
 
 if __name__ == "__main__":
-    card_number = "2024 5555 7862 4983"
-    print(get_mask_card_number(card_number))
-
-    account_number = "57546868641646"
-    print(get_mask_account(account_number))
+    input_str = input("Введите данные карты или счёта: ")
+    print(mask_account_card(input_str))
