@@ -1,4 +1,5 @@
-from src.masks import get_mask_card_number, get_mask_account
+from src.masks import get_mask_account, get_mask_card_number
+from datetime import datetime
 
 
 def mask_account_card(input_str: str) -> str:
@@ -13,7 +14,7 @@ def mask_account_card(input_str: str) -> str:
     """
     input_lower = input_str.lower()
 
-    if 'счет' in input_lower:
+    if "счет" in input_lower:
         # Обработка счета
         account_number = input_str.split()[-1]
         return input_str.replace(account_number, get_mask_account(account_number))
@@ -21,9 +22,6 @@ def mask_account_card(input_str: str) -> str:
         # Обработка карты
         card_number = input_str.split()[-1]
         return input_str.replace(card_number, get_mask_card_number(card_number))
-
-
-from datetime import datetime
 
 
 def get_date(date_str: str) -> str:
