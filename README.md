@@ -9,13 +9,12 @@
 
 3.**Установка**:
 - Клонировать репозиторий:
-  `
-  git clone https://github.com/alexandrpotemkin/homework.git
-  `
+  
+  `git clone https://github.com/alexandrpotemkin/homework.git`
 - Установка зависимостей:
-  `
+  ```
   poetry install
-  `
+  ```
 - Запустите основной скрипт:
   `
   python main.py
