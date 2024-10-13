@@ -27,7 +27,6 @@ def mask_account_card(data: str) -> str:
         return f"{card_type} {masked_card}"
 
 
-
 def get_date(date_str: str) -> str:
     """
     Преобразует дату из формата 'YYYY-MM-DDTHH:MM:SS.microsecond' в формат 'ДД.ММ.ГГГГ'.
