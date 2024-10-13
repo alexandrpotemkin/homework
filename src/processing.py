@@ -1,7 +1,7 @@
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 
 
-def filter_by_state(list_of_dictionaries: List[Dict[str, str]], state: Optional[str] = "EXECUTED") -> List[Dict]:
+def filter_by_state(list_of_dictionaries: List[Dict[str, Any]], state: Optional[str] = "EXECUTED") -> List[Dict]:
     """
     Фильтрует список словарей по значению ключа 'state'.
 
@@ -15,7 +15,7 @@ def filter_by_state(list_of_dictionaries: List[Dict[str, str]], state: Optional[
     return [item for item in list_of_dictionaries if item.get("state") == state]
 
 
-def sort_by_date(list_of_dictionaries: List[Dict[str, str]], descending: bool = True) -> List[Dict]:
+def sort_by_date(list_of_dictionaries: List[Dict[str, Any]], descending: bool = True) -> List[Dict]:
     """
     Сортирует список словарей по ключу 'date'.
 
