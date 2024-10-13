@@ -9,11 +9,11 @@
 
 3.**Установка**:
 - Клонировать репозиторий:
-  '''git clone https://github.com/alexandrpotemkin/homework.git'''
+  `git clone https://github.com/alexandrpotemkin/homework.git`
 - Установка зависимостей:
-  '''poetry install'''
+  `poetry install`
 - Запустите основной скрипт:
-  ''' python main.py'''
+  `python main.py`
 
 4.**Подкладка и форматирование**
 - Этот проект соответсвует стандарту PEP8 и использует такие инструменты, как flake8, black и isort для проверки и форматирования кода. Вы можете запустить эти инструменты с помощью:
